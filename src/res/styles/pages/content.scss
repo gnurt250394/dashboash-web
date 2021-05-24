@@ -1,0 +1,40 @@
+
+@media only screen and (min-width: 1024px) {
+
+    .sub-menu-home{
+        transition: 0.4s;
+        -webkit-animation-name: dilen;  /* Safari 4.0 - 8.0 */
+        -webkit-animation-duration: 0.2s;  /* Safari 4.0 - 8.0 */  
+        -webkit-animation-fill-mode: both; /* Safari 4.0 - 8.0 */
+        animation-name: dilen;
+        animation-duration: 0.4s;  
+        animation-fill-mode: both;
+    }
+
+  }
+@media only screen and(max-width:768px){
+
+}
+.icon-dropdown-mobile{
+    display: inline-block;
+    margin-left: 5px;
+    background: url('images/down-arrow.svg') no-repeat;
+    width: 16px;
+    height: 20px;
+}
+
+@-webkit-keyframes dilen{
+    from{
+        top:60px ;opacity:0
+    } to{
+        top: 42px; opacity: 1;
+    }
+}
+
+@-webkit-keyframes dixuong{
+    from{
+        top:40 
+    } to{
+        top: 66
+    }
+}

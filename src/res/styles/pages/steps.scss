@@ -1,0 +1,102 @@
+@import '../variables';
+
+.steps {
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 31px;
+  margin: 0 5% 0 5%;
+  .content-steps {
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+    font-family: Mulish;
+    font-style: normal;
+    font-weight: bold;
+  }
+  .text-steps-title {
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    color: $secondary-color;
+    @media (max-width: 767px) {
+      font-size: 15px;
+    }
+    @media (max-width: 524px) {
+      font-size: 14px;
+    }
+  }
+  .text-steps-title.active {
+  }
+  .text-steps-title.complete {
+  }
+  .text-steps-title.disabled {
+    color: #86899b;
+  }
+  .text-steps-description.disabled {
+    color: #86899b;
+  }
+  .text-steps-description {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: center;
+    color: $secondary-color;
+    @media (max-width: 767px) {
+      font-size: 13px;
+    }
+    @media (max-width: 524px) {
+      font-size: 12px;
+    }
+  }
+  .border-left-steps {
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+  }
+  .border-right-steps {
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+  }
+  .steps-progres {
+    background-color: #d9d9d9;
+    height: 10px;
+    width: 100%;
+    position: relative;
+    margin-top: 20px;
+    @media (max-width: 767px) {
+      height: 6px;
+    }
+    .steps-dot {
+      height: 30px;
+      width: 30px;
+      border-radius: 50%;
+      background-color: $primary-color;
+      position: absolute;
+      top: -10px;
+      left: 45%;
+      @media (max-width: 767px) {
+        height: 20px;
+        width: 20px;
+        top: -7px;
+      }
+    }
+  }
+  .steps-progres > .steps-dot.disabled {
+    background-color: #d9d9d9;
+  }
+  .steps-progres.active {
+    background-color: $primary-color;
+  }
+  .steps-progres.complete {
+    background-color: $primary-color;
+  }
+  .steps-progres.disabled {
+    background-color: #d9d9d9;
+  }
+}
+@media only screen and (max-width: 524px) {
+  .steps {
+    display: none;
+  }
+} ;

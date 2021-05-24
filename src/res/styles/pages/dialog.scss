@@ -1,0 +1,34 @@
+.row-dialog{
+    .side-dialog{
+        height: 100%;
+    }
+    .text-center{
+        text-align: center;
+    }
+    .text-dialog {
+        padding:0 45px!important;
+    }
+    .text-white-dialog{
+        color: #fff;
+    }
+    .icon-dialog{
+        margin-left: 8px;
+    }
+
+}
+
+@media only screen and (max-width: 600px) {
+    .row-dialog .icon-dialog {
+        margin-left: 8px;
+        width: 80%;
+      }
+      .row-dialog .text-white-dialog {
+        color: #fff;
+        font-size: 16px!important;
+        margin: 0;
+        padding:0!important;
+      }
+      .left-side > img{
+        width: 90%!important;
+      }
+}

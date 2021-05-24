@@ -1,0 +1,103 @@
+/* STRUCTURE */
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+.account-dialog {
+  .input-data-account {
+    width: 100%;
+  }
+  .form-submit-account {
+    margin-top: 24px;
+    .bottom-dialog {
+      .button-account-form {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        background: #00cba7;
+        border-radius: 16px;
+
+        font-family: Mulish;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 20px;
+        /* identical to box height */
+
+        text-align: center;
+        text-transform: uppercase;
+
+        color: #ffffff;
+      }
+    }
+  }
+  .icon-show-hide {
+    position: absolute;
+    right: 16px;
+    color: #000;
+  }
+  svg {
+    color: #4bba7b;
+    max-width: 20px;
+  }
+  .group-radio-method > div:first-child {
+    flex-direction: row-reverse;
+  }
+  .label-account {
+    font-weight: 600;
+    margin-bottom: 8px;
+    margin-top: 8px;
+    text-align: left;
+  }
+  .otp-area {
+    text-align: center;
+    margin-top: 48px;
+    border: 1px solid #00977c;
+    border-radius: 5px;
+    padding: 20px;
+    input {
+      width: 40px !important;
+      line-height: 35px !important;
+      border: none !important;
+      border-bottom: 4px solid #00977c !important;
+      margin: 0 12px !important;
+      font-size: 30px !important;
+      outline: none;
+    }
+    .otp-title {
+      font-weight: 600;
+      font-style: italic;
+      padding-bottom: 16px;
+    }
+  }
+}
+@media only screen and (max-width: 1048px) {
+  .account-dialog .left-side {
+    display: none;
+  }
+  .account-dialog .right-side {
+    min-width: 100% !important;
+  }
+  .group-radio-method > div:first-child {
+    flex-direction: column !important;
+  }
+  .bottom-dialog span {
+    padding: 8px 0 !important;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .logo-dialog img {
+    width: 80%;
+  }
+  .bottom-dialog span {
+    padding: 8px 14px !important;
+  }
+  .account-dialog .form-submit-account {
+    margin-top: 0;
+  }
+  .label-account {
+    margin-top: 8px !important;
+  }
+  .bottom-dialog {
+    margin-top: 0 !important;
+  }
+  .bottom-dialog button {
+    padding: 0 !important;
+  }
+}

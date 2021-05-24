@@ -1,0 +1,530 @@
+@import '../variables';
+
+.container-profile-doctor {
+  background: #ffffff;
+  box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 16px;
+  padding: 10px;
+  .container-info-doctor {
+    flex-direction: row;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    flex-wrap: wrap-reverse;
+    .content-info {
+      padding-top: 15px;
+      width: 100%;
+      .group-specialist {
+        flex-direction: row;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-wrap: none;
+      }
+    }
+    .container-like {
+      padding-right: 20px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: flex-end;
+      padding-top: 20px;
+      flex: 1;
+    }
+  }
+  ul.timeline {
+    list-style-type: none;
+    position: relative;
+    font-family: Mulish;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 24px;
+  }
+  // ul.timeline:before {
+  //   content: ' ';
+  //   background: #d4d9df;
+  //   display: inline-block;
+  //   position: absolute;
+  //   left: 24px;
+  //   width: 2px;
+  //   height: 100%;
+  //   z-index: 400;
+  // }
+  ul.timeline > li {
+    margin: 8px 0;
+    padding-left: 5px;
+  }
+  ul.timeline > li:before {
+    content: ' ';
+    background: #00ba99;
+    display: inline-block;
+    position: absolute;
+    border-radius: 50%;
+    left: 20px;
+    width: 10px;
+    height: 10px;
+    z-index: 400;
+    margin-top: 8px;
+  }
+  .text-title {
+    font-family: Mulish;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 18px;
+    text-transform: uppercase;
+    color: #000000;
+    padding-left: 10px;
+    margin-top: 25px;
+    margin-bottom: 10px;
+    opacity: 0.8;
+  }
+  .text-content {
+    font-family: Mulish;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    color: #000000;
+    opacity: 0.8;
+    padding-left: 10px;
+  }
+  .content-profile-doctor {
+    margin: 0 10px 0 10px;
+    padding: 24px 0 24px 0;
+    border-bottom: 1px solid #00000030;
+    @media (max-width: 992px) {
+      margin: 0;
+    }
+    .img-doctor {
+      height: 60px;
+      width: 60px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+    .text-name {
+      font-family: Mulish;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 20px;
+      line-height: 25px;
+      color: #000000;
+      opacity: 0.8;
+    }
+
+    .content-specialist {
+      padding-right: 15px;
+      .text-specialist:hover {
+        text-decoration: underline;
+      }
+      .text-specialist {
+        font-family: Mulish;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 18px;
+        padding-top: 5px;
+        color: $text-color-black-fade;
+        white-space: pre;
+        padding-left: 3px;
+      }
+    }
+    .container-rating {
+      // padding-left: 0;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      @media (max-width: $md) {
+        margin-top: 10px;
+      }
+      .text-rating {
+        font-family: Mulish;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 18px;
+        color: $text-color-black;
+      }
+      .line-between {
+        width: 1px;
+        height: 90%;
+        background-color: #000;
+        opacity: 0.2;
+        margin-left: 5px;
+        margin-right: 5px;
+      }
+      .content-rating {
+        font-family: Mulish;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 20px;
+        color: #000000;
+        opacity: 0.8;
+      }
+    }
+  }
+}
+
+.container-time-booking {
+  background: #ffffff;
+  box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 16px;
+  padding: 0px 0px 10px 0;
+  @media (max-width: 768px) {
+    margin-top: 20px;
+  }
+  .container-label {
+    background: $secondary-color;
+    border-radius: 16px 16px 0px 0px;
+    padding: 15px;
+    font-family: Mulish;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: #ffffff;
+    // margin-bottom: 16px;
+    @media (max-width: 768px) {
+      margin-bottom: 0;
+    }
+  }
+  .group-time-picker {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    @media (max-width: 768px) {
+      flex-direction: row;
+    }
+    @media (max-width: 589px) {
+      flex-direction: column;
+    }
+    .content-date-time {
+      width: 100%;
+      .mn-date-picker {
+        .mn-date-picker-header {
+          display: flex;
+          margin-top: 15px;
+          align-items: center;
+          .next,
+          .pre {
+            color: #000;
+            background: #fff;
+            padding: 0 10px;
+            border-radius: 2px;
+            cursor: pointer;
+            display: block;
+          }
+          .current-date {
+            flex: 1;
+            text-align: center;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 18px;
+            line-height: 21px;
+            text-transform: uppercase;
+            color: #000;
+          }
+        }
+        .mn-date-picker-calendar {
+          width: 100%;
+          background: #ffffff;
+          border: 0px solid #fff;
+          box-sizing: border-box;
+          border-radius: 5px;
+          .mn-date-picker-calendar-header {
+            background: #fff;
+            // border-radius: 5px;
+            display: flex;
+            border: 1px solid rgba(0, 0, 0, 0.1);
+            padding: 0;
+            .mn-date-picker-calendar-header-item {
+              text-align: center;
+              height: 40px;
+              flex: 1;
+              padding: 0;
+              list-style: none;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              color: #000;
+              font-weight: bold;
+              font-size: 14px;
+              line-height: 18px;
+            }
+          }
+          .mn-date-picker-calendar-body {
+            display: flex;
+            padding: 0;
+            .mn-date-picker-calendar-body-item {
+              text-align: center;
+              height: auto;
+              cursor: pointer;
+              flex: 1;
+              padding: 0;
+              list-style: none;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              font-weight: normal;
+              font-size: 14px;
+              line-height: 18px;
+              overflow: hidden;
+            }
+            .mn-date-picker-calendar-body-item.empty {
+              cursor: default;
+            }
+            .mn-date-picker-calendar-body-item.selected {
+              span {
+                background-color: $secondary-color;
+                width: 30px;
+                height: 30px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 15px;
+                color: #fff;
+              }
+            }
+            .mn-date-picker-calendar-body-item.custom-maker {
+              span {
+                background: #fff;
+                width: 30px;
+                height: 30px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 15px;
+                color: $secondary-color;
+                border: 1px solid $secondary-color;
+              }
+            }
+            .mn-date-picker-calendar-body-item.disabled {
+              cursor: default;
+              span {
+                background: transparent;
+                cursor: not-allowed;
+                color: #cacaca;
+                width: 30px;
+                height: 30px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 15px;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .time-picker {
+      clear: both;
+      padding: 5px 24px 24px 24px;
+      background-color: #fff;
+      // box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+      .label {
+        font-family: Mulish;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 18px;
+        text-transform: uppercase;
+        color: $text-color-black-fade;
+        margin-bottom: 0;
+        margin-left: 5px;
+      }
+      .list-time {
+        .button-select-date-time {
+          align-self: center;
+          min-width: 60px;
+          margin: 5px;
+          display: inline-block;
+          justify-content: center;
+          background: rgba(49, 97, 173, 0.1);
+          border-radius: 8px;
+          cursor: pointer;
+          .item-label {
+            text-align: center;
+            margin: 0;
+            font-family: Mulish;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 18px;
+            color: #000000;
+            flex: none;
+            order: 0;
+            align-self: center;
+            flex-grow: 0;
+            margin: 10px 0px !important;
+          }
+        }
+        .button-select-date-time.item_selected {
+          background-color: $secondary-color;
+          .item-label {
+            color: #fff !important;
+          }
+        }
+        .button-select-date-time.item_disabled {
+          border-color: #cacaca;
+          cursor: not-allowed;
+          .item-label {
+            color: #cacaca;
+          }
+        }
+      }
+    }
+  }
+  .container-service {
+    padding: 16px 10px 20px 20px;
+    .label-service {
+      font-family: Mulish;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 23px;
+      color: $text-color-black;
+      padding-top: 5px;
+      .title-price-unit {
+        font-family: Mulish;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 16px;
+        text-decoration-line: line-through;
+        color: #000000;
+        opacity: 0.3;
+        margin-left: 10px;
+      }
+      .text-service {
+        font-family: Mulish;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 23px;
+        color: $primary-color;
+      }
+    }
+  }
+  .container-button-booking {
+    display: flex;
+    align-items: center;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 47px;
+    .button-booking {
+      background-color: $primary-color;
+      outline: none;
+      padding: 10px;
+      border: none;
+      border-radius: 16px;
+      margin-top: 20px;
+      color: #fff;
+      font-weight: bold;
+      width: 70%;
+      font-family: Mulish;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 16px;
+      line-height: 20px;
+      text-align: center;
+      text-transform: uppercase;
+    }
+  }
+}
+
+.container-header {
+  border-bottom: 1px solid $secondary-color;
+  margin-bottom: 20px;
+  margin-top: 30px;
+  .content-header {
+    background-color: $secondary-color;
+    padding: 5px 30px 5px 30px;
+    border-radius: 8px 8px 0px 0px;
+    font-family: Mulish;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+    /* identical to box height */
+
+    text-transform: uppercase;
+
+    color: #ffffff;
+    .icon-doctor {
+      height: 25px;
+      width: 25px;
+      object-fit: contain;
+      padding-bottom: 5px;
+      margin-right: 5px;
+    }
+  }
+}
+.container-view-all {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: space-between;
+  padding-top: 50px;
+  .text-search-hospital {
+    font-family: Merriweather;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 28px;
+    text-transform: uppercase;
+    color: $text-color-black;
+  }
+  .text-view-all {
+    text-decoration: underline;
+    font-family: Mulish;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+  }
+}
+.group-list-hospital {
+  padding: 0 0 0 24px;
+  .container-item {
+    padding-left: 0 !important;
+    margin-bottom: 10px;
+    .item-hospital {
+      background: #ffffff;
+      height: 100%;
+      box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.3);
+      border-radius: 16px;
+      display: flex;
+      flex-direction: row;
+      padding: 12px;
+      margin-top: 12px;
+      .img-hospital {
+        height: 52px;
+        width: 52px;
+        border-radius: 50%;
+        margin-right: 12px;
+        margin-left: 12px;
+      }
+      .text-hospital {
+        font-family: Mulish;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 20px;
+        color: $text-color-black;
+      }
+      .text-address {
+        font-family: Mulish;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 18px;
+        color: $text-color-black-fade;
+        margin-top: 6px;
+      }
+    }
+  }
+}

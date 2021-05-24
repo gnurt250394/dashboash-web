@@ -1,0 +1,29 @@
+@import '../variables';
+
+.main-content {
+  .login-register-wrapper {
+    // max-height: 600px;
+    background-color: $secondary-color;
+    padding: 5rem 0;
+    .login-image {
+      img {
+        max-width: 100%;
+        height: auto;
+      }
+    }
+    .login-form {
+    }
+  }
+}
+
+@media screen and (min-width: $md) and (max-width: $lg) {
+  .login-image {
+    display: none;
+  }
+}
+
+@media screen and (max-width: $md) {
+  .login-image {
+    display: none;
+  }
+}

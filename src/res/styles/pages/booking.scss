@@ -1,0 +1,1354 @@
+@import '../variables';
+.container-booking {
+  background-image: url('images/booking/ic_header_booking.png');
+  background-repeat: no-repeat;
+  background-size: 200%;
+  border-bottom-left-radius: 16px;
+  border-bottom-right-radius: 16px;
+  padding-top: 10px;
+  .bg-success {
+    height: 200px;
+    width: 60%;
+  }
+  .header-booking {
+    padding-left: 15px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    .title-header {
+      font-family: Mulish;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 28px;
+      line-height: 35px;
+      color: #ffffff;
+      padding-left: 10px;
+      @media (max-width: 414px) {
+        font-size: 20px;
+        line-height: 24px;
+      }
+    }
+  }
+  .container-info-booking {
+    background: #ffffff;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 16px;
+    padding: 10px 20% 30px 20%;
+    margin-top: 10px;
+    @media (max-width: 768px) {
+      padding: 10px 6% 30px 6%;
+    }
+    .img-booking-success {
+      width: 100%;
+    }
+    .text-success {
+      font-family: Mulish;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 36px;
+      line-height: 45px;
+      text-align: center;
+      color: #219653;
+      @media (max-width: 414px) {
+        font-size: 26px;
+        line-height: 38px;
+      }
+    }
+    .text-label-success {
+      font-family: Mulish;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 28px;
+      text-align: center;
+      color: $text-color-black;
+      padding-top: 32px;
+      @media (max-width: 414px) {
+        font-size: 16px;
+        padding-top: 20px;
+        line-height: 23px;
+      }
+    }
+    .text-info-booking {
+      font-family: Mulish;
+      font-style: italic;
+      font-weight: bold;
+      font-size: 16px;
+      line-height: 20px;
+      text-align: center;
+      text-decoration-line: underline;
+      color: $secondary-color;
+      padding-top: 50px;
+      padding-bottom: 30px;
+      @media (max-width: 414px) {
+        font-size: 14px;
+        padding-top: 30px;
+      }
+    }
+    .text-info-booking:hover {
+      color: $primary-color;
+    }
+    .text-comment {
+      font-family: Mulish;
+      font-style: italic;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 130%;
+      text-align: center;
+      color: $text-color-black-fade;
+      padding: 20px 15% 30px 15%;
+      @media (max-width: 320px) {
+        font-size: 12px;
+      }
+    }
+    .group-image {
+      display: flex;
+      flex-direction: row;
+      .picker-image {
+        padding: 10px;
+        max-height: 120px;
+        display: inline-block;
+        @media (max-width: 414px) {
+          font-size: 12px;
+        }
+        @media (max-width: 320px) {
+          font-size: 11px;
+        }
+      }
+      .attachment {
+        margin-left: 20px;
+        @media (max-width: 414px) {
+          margin-left: 10px;
+        }
+        .attachment-item {
+          display: inline-block;
+          margin: 5px;
+          position: relative;
+          background: #ffffff;
+          box-sizing: border-box;
+          border-radius: 5px;
+          box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
+          border-radius: 7px;
+          .data-image {
+            border-radius: 7px;
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            @media (max-width: 414px) {
+              width: 70px !important;
+              height: 70px !important;
+            }
+          }
+          .button-remove {
+            cursor: pointer;
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 15px;
+            height: 15px;
+            margin: 5px;
+          }
+          .image-status {
+            top: 35px;
+            left: 40px;
+            @media (max-width: 414px) {
+              top: 25px;
+              left: 25px;
+            }
+            position: absolute;
+            height: 20px;
+          }
+        }
+        .attachment-item.error {
+          display: flex;
+          box-shadow: 0px 4px 10px #00000040;
+        }
+      }
+    }
+
+    .info-booking {
+      background: $secondary-color;
+      border: 1px solid rgba(0, 0, 0, 0.2);
+      border-radius: 16px;
+      padding: 20px 10px 20px 20px;
+      display: flex;
+      flex-direction: row;
+      font-family: Mulish;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      @media (max-width: 414px) {
+        font-size: 13px !important;
+      }
+      @media (max-width: 320px) {
+        font-size: 12px !important;
+      }
+      //   line-height: 18px;
+      /* identical to box height */
+
+      color: #ffffff;
+      .text-name-doctor {
+        font-family: Mulish;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 25px;
+        /* identical to box height */
+        @media (max-width: 414px) {
+          font-size: 17px !important;
+        }
+        @media (max-width: 320px) {
+          font-size: 16px !important;
+        }
+        color: #ffffff;
+      }
+
+      .img-doctor {
+        height: 70px;
+        width: 70px;
+        border-radius: 35px;
+        margin-right: 10px;
+      }
+    }
+
+    .content-booking {
+      background: #ffffff;
+      border: 1px solid rgba(0, 0, 0, 0.2);
+      border-radius: 16px;
+      margin-top: 20px;
+      .container-bhyt {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-between;
+        padding: 10px;
+        flex-wrap: wrap;
+        border-bottom: 1px solid #00000030;
+        .text-bhyt {
+          font-family: Mulish;
+          font-style: normal;
+          font-weight: bold;
+          font-size: 16px;
+          color: $text-color-black;
+          @media (max-width: 414px) {
+            font-size: 14px !important;
+          }
+          @media (max-width: 320px) {
+            font-size: 13px !important;
+          }
+        }
+        .content-switch {
+          text-align: right;
+          width: 35%;
+          @media (max-width: 512px) {
+            font-size: 12px;
+            width: 100%;
+            margin-top: 12px;
+          }
+          @media (max-width: 320px) {
+            font-size: 11px !important;
+          }
+          .text-label {
+            font-family: Mulish;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 16px;
+            line-height: 20px;
+            text-align: right;
+            color: $primary-color;
+            @media (max-width: 414px) {
+              font-size: 14px !important;
+            }
+            @media (max-width: 320px) {
+              font-size: 13px !important;
+            }
+          }
+        }
+        .icon {
+          margin-bottom: 5px;
+        }
+      }
+      .container-profile {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 10px 15px 10px;
+
+        .text-bhyt {
+          font-family: Mulish;
+          font-style: normal;
+          font-weight: bold;
+          font-size: 16px;
+          color: $text-color-black;
+        }
+        .icon {
+          margin-bottom: 5px;
+        }
+      }
+
+      .container-select-profile {
+        display: flex;
+        flex-direction: column;
+        .finish-profile {
+          text-align: right;
+          font-family: Mulish;
+          padding: 0 15px 10px 15px;
+          .text-finish {
+            font-style: italic;
+            font-weight: bold;
+            font-size: 14px;
+            line-height: 18px;
+            text-decoration-line: underline;
+            color: $tabs-base-color;
+            @media (max-width: 414px) {
+              font-size: 12px !important;
+            }
+            @media (max-width: 320px) {
+              font-size: 11px !important;
+            }
+          }
+          .text-has-finish {
+            font-style: italic;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 18px;
+            color: $tabs-base-color;
+            @media (max-width: 414px) {
+              font-size: 12px !important;
+            }
+            @media (max-width: 320px) {
+              font-size: 11px !important;
+            }
+          }
+        }
+        .view-profile {
+          flex: 1;
+          cursor: pointer;
+          border-radius: 5px;
+          display: flex;
+          flex-direction: row;
+          align-items: flex-start;
+          justify-content: space-between;
+          flex-wrap: wrap;
+          padding: 10px 10px 0 10px;
+          .text-bhyt {
+            font-family: Mulish;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 16px;
+            color: $text-color-black;
+            @media (max-width: 414px) {
+              font-size: 14px !important;
+            }
+            @media (max-width: 320px) {
+              font-size: 13px !important;
+            }
+          }
+          .icon {
+            margin-bottom: 5px;
+          }
+          @media (max-width: 480px) {
+            height: 35px;
+          }
+          @media (max-width: 320px) {
+            height: 30px;
+          }
+          .group-profile {
+            text-align: right;
+            @media (max-width: 512px) {
+              width: 100%;
+            }
+            .profile-name {
+              font-family: Roboto;
+              font-style: normal;
+              font-weight: 500;
+              font-size: 15px;
+              line-height: 21px;
+              color: #223645;
+              padding-right: 10px;
+              @media (max-width: 414px) {
+                font-size: 13px !important;
+              }
+              @media (max-width: 320px) {
+                font-size: 12px !important;
+              }
+            }
+
+            .profile-name-empty {
+              flex: 1;
+              font-family: Roboto;
+              font-style: italic;
+              font-weight: normal;
+              font-size: 15px;
+              line-height: 21px;
+              color: #223645;
+              padding-right: 10px;
+              @media (max-width: 512px) {
+                font-size: 13px !important;
+              }
+              @media (max-width: 320px) {
+                font-size: 12px !important;
+              }
+            }
+          }
+        }
+      }
+    }
+    .input-description {
+      background: #ffffff;
+      border: 1px solid #00000040;
+      margin-top: 20px;
+      margin-bottom: 8px;
+      box-sizing: border-box;
+      border-radius: 16px;
+      width: 100%;
+      min-height: 100px;
+      padding: 10px;
+      outline: none;
+    }
+    .container-button-booking {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      .button-booking:hover {
+        background: $impress-color;
+      }
+      .button-booking {
+        background: $primary-color;
+        border-radius: 16px;
+        border: none;
+        height: 44px;
+        width: 40%;
+        font-family: Mulish;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 20px;
+        text-align: center;
+        text-transform: uppercase;
+        color: #ffffff;
+        flex: none;
+        order: 0;
+        align-self: center;
+        flex-grow: 0;
+        margin: 10px 0px;
+        outline: none;
+        @media (max-width: 414px) {
+          font-size: 14px;
+          height: 40px;
+        }
+        @media (max-width: 320px) {
+          font-size: 13px !important;
+          width: 60%;
+        }
+      }
+    }
+  }
+
+  // steps 2
+  .container-payment-method {
+    background: #ffffff;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 16px;
+    margin-top: 20px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    .info-banking {
+      background: #00000010;
+      color: $text-color-black;
+      padding-bottom: 10px;
+      .text-title {
+        font-family: Mulish;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 20px;
+        color: $text-color-black;
+        padding-bottom: 10px;
+        padding-top: 10px;
+      }
+      .container-info-banking {
+        background: #00cba720;
+        .color-banking {
+          background: #00cba740;
+        }
+        .content-banking {
+          display: flex;
+          flex-direction: row;
+          padding: 10px;
+          align-items: center;
+          flex: 1;
+          flex-wrap: wrap;
+          justify-content: space-between;
+          .button-copy:hover {
+            background-color: $impress-color;
+          }
+          .button-copy {
+            background: $tabs-base-color;
+            border-radius: 16px;
+            border: none;
+            outline: none;
+            font-weight: bold;
+            font-size: 16px;
+            line-height: 20px;
+            color: #ffffff;
+            padding: 5px 10px 5px 10px;
+            @media (max-width: 320px) {
+              margin-top: 5px;
+            }
+          }
+          .text-label {
+            font-family: Mulish;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 20px;
+            color: $text-color-black;
+          }
+          .text-content {
+            font-family: Mulish;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 16px;
+            line-height: 20px;
+            color: $text-color-black;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            @media (max-width: 320px) {
+              margin-top: 5px;
+            }
+          }
+        }
+      }
+    }
+    .label-payment {
+      font-family: Mulish;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 16px;
+      line-height: 20px;
+      color: $text-color-black;
+      padding-left: 15px;
+      flex: 1;
+      display: flex;
+      padding-bottom: 10px;
+      border-bottom: 1px solid #00000040;
+      @media (max-width: 414px) {
+        font-size: 14px;
+      }
+    }
+    .item-payment {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      border-bottom: 1px solid #00000040;
+      padding-right: 10px;
+      padding-left: 5px;
+      .content-payment {
+        display: flex;
+        flex-direction: row;
+        flex: 1;
+        padding-left: 10px;
+        padding-top: 13px;
+        padding-bottom: 13px;
+        .icon-payment {
+          @media (max-width: 414px) {
+            width: 40px;
+            height: 40px;
+          }
+        }
+      }
+      .radio {
+        width: 20px;
+        height: 20px;
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: solid 1.5px rgb(2, 195, 154);
+        @media (max-width: 414px) {
+          width: 15px;
+          height: 15px;
+        }
+        .selected {
+          background-color: rgb(2, 195, 154);
+          width: 10px;
+          height: 10px;
+          border-radius: 5px;
+          @media (max-width: 414px) {
+            width: 5px;
+            height: 5px;
+          }
+        }
+      }
+      .text {
+        font-family: Mulish;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 20px;
+        color: $text-color-black;
+        margin-left: 13px;
+        opacity: 0.8;
+        font-size: 16px;
+        font-weight: bold;
+        font-style: normal;
+        letter-spacing: 0;
+        color: #000;
+        margin-bottom: 0;
+        @media (max-width: 414px) {
+          font-size: 13px;
+        }
+      }
+      .text-description {
+        margin-left: 13px;
+        font-family: Mulish;
+        padding-right: 20px;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 18px;
+        color: $text-color-black-fade;
+        @media (max-width: 414px) {
+          font-size: 11px;
+          // display: none
+        }
+      }
+    }
+  }
+  .container-price {
+    background-color: $secondary-color;
+    padding: 10px;
+    .sum-price {
+      padding-top: 24px;
+      font-family: Mulish;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 16px;
+      line-height: 20px;
+      /* identical to box height */
+      @media (max-width: 320px) {
+        font-size: 12px;
+      }
+      color: #ffffff;
+      .text-sum-price {
+        font-family: Mulish;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 30px;
+        text-align: right;
+        @media (max-width: 320px) {
+          font-size: 20px;
+        }
+        color: #ffffff;
+      }
+    }
+    .content-price {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      font-family: Mulish;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 20px;
+      /* identical to box height */
+      @media (max-width: 320px) {
+        font-size: 14px;
+      }
+      color: #ffffff;
+      padding-bottom: 5px;
+      .price {
+        text-align: right;
+        padding-right: 10px;
+      }
+    }
+  }
+  .container-services {
+    .box-services {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+      padding: 5px 10px 5px 10px;
+      font-family: Mulish;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 16px;
+      color: $text-color-black;
+      flex-wrap: wrap;
+      @media (max-width: 414px) {
+        font-size: 14px;
+      }
+      @media (max-width: 320px) {
+        font-size: 13px;
+      }
+      .content-services {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-end;
+        @media (max-width: 512px) {
+          width: 100%;
+        }
+      }
+      .text-service {
+        font-family: Mulish;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 20px;
+        text-align: right;
+        color: $text-color-black-fade;
+        @media (max-width: 320px) {
+          font-size: 12px;
+        }
+        @media (max-width: 375px) {
+          width: 70%;
+        }
+        @media (max-width: 414px) {
+          font-size: 13px;
+        }
+      }
+      .icon-service {
+        width: 20px;
+        height: 20px;
+        object-fit: contain;
+        margin-right: 10px;
+        margin-bottom: 3px;
+      }
+
+      .icon {
+        margin-bottom: 3px;
+        margin-left: 10px;
+        width: 16px;
+        height: 16px;
+        object-fit: contain;
+        @media (max-width: 414px) {
+          width: 13px;
+          height: 13px;
+          object-fit: contain;
+        }
+      }
+    }
+  }
+  .container-voucher {
+    .box-voucher {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      justify-content: space-between;
+      border: 1px solid rgba(0, 0, 0, 0.2);
+      padding: 5px 10px 5px 10px;
+      font-family: Mulish;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 16px;
+      color: $text-color-black;
+      flex-wrap: wrap;
+      @media (max-width: 414px) {
+        font-size: 13px;
+      }
+      .icon {
+        margin-bottom: 3px;
+        margin-left: 10px;
+        @media (max-width: 414px) {
+          width: 13px;
+          height: 13px;
+          object-fit: contain;
+        }
+      }
+      .label-voucher {
+        padding-top: 10px;
+        @media (max-width: 414px) {
+          font-size: 12px;
+        }
+      }
+      .voucher-selected {
+        background-color: $impress-color;
+        padding: 5px;
+        color: #fff;
+      }
+    }
+  }
+}
+.container-modal-update .ant-modal-body {
+  .avatar-profile {
+    position: relative;
+    margin: 0 auto;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    border: 2px solid rgba(0, 0, 0, 0.1);
+    img {
+      height: 100px;
+      width: 100px;
+      border-radius: 50%;
+    }
+    .upload-icon {
+      height: 40px;
+      width: 40px;
+      position: absolute;
+      bottom: 0;
+    }
+  }
+}
+.ant-popover-inner-content {
+  padding: 0;
+  .list-profile {
+    max-height: 300px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    background: #ffffff;
+    box-sizing: border-box;
+    border-radius: 5px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
+    transition: opacity 0.5s;
+    ul {
+      padding: 0 !important;
+      margin: 0 !important;
+      .item-profile {
+        border-bottom: 1px solid #dddddd;
+        padding: 10px;
+        cursor: pointer;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 15px;
+        line-height: 16px;
+        @media (max-width: 414px) {
+          font-size: 13px !important;
+        }
+        @media (max-width: 320px) {
+          font-size: 12px !important;
+        }
+        /* identical to box height */
+        display: flex;
+
+        color: #223645;
+        span {
+          flex: 1;
+        }
+      }
+      .selected {
+        background: rgba(0, 210, 177, 0.1);
+        img {
+          margin-left: 10px;
+          width: 15px;
+          align-self: flex-start;
+        }
+      }
+    }
+  }
+}
+.container-modal {
+  .content-title-modal {
+    .services-selected {
+      padding-bottom: 15px;
+      .text-service-selected {
+        font-family: Mulish;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 20px;
+        text-align: right;
+        text-transform: uppercase;
+        color: #e0004d;
+        @media (max-width: 320px) {
+          font-size: 13px;
+        }
+      }
+      .text-service {
+        font-family: Mulish;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 18px;
+        text-align: right;
+
+        color: $text-color-black;
+        @media (max-width: 320px) {
+          font-size: 11px;
+        }
+      }
+      .price-service {
+        font-family: Mulish;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 18px;
+        text-align: right;
+        color: $primary-color;
+        @media (max-width: 320px) {
+          font-size: 11px;
+        }
+      }
+    }
+  }
+}
+.container-detail-info {
+  font-family: Mulish;
+  background-color: #fff;
+  padding: 20px;
+  max-width: 400px;
+  border-radius: 10px;
+  .text-name-service {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 25px;
+    color: $text-color-black;
+    margin-bottom: 10px;
+  }
+  .content-rating {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 19px;
+    .text-appointments {
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 18px;
+      color: $text-color-black;
+      margin-bottom: 5px;
+    }
+    .text-rating {
+      font-style: normal;
+      font-weight: bold;
+      font-size: 16px;
+      line-height: 20px;
+      color: #000000;
+    }
+  }
+  .text-overview {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 18px;
+    text-transform: uppercase;
+    color: #000000;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+  .text-description {
+    font-family: Mulish;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    color: #000000;
+  }
+  .text-hospital {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+    color: $text-color-black-fade;
+    margin-bottom: 6px;
+    .icon {
+      height: 20px;
+      width: 20px;
+      object-fit: contain;
+    }
+  }
+}
+.list-services {
+  text-align: center;
+  .button-select-service {
+    background: $primary-color;
+    border-radius: 16px;
+    border: none;
+    outline: none;
+    height: 44px;
+    padding: 0 10px 0 10px;
+
+    font-family: Mulish;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+    /* identical to box height */
+
+    text-align: center;
+    text-transform: uppercase;
+
+    color: #ffffff;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    @media (max-width: 320px) {
+      font-size: 13px;
+      height: 40px;
+    }
+  }
+  .container-service {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    .button-check {
+      border-radius: 7.5px;
+      height: 15px;
+      width: 15px;
+      margin-bottom: 10px;
+    }
+    .content-service {
+      background: #ffffff;
+      box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.25);
+      border-radius: 16px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px;
+      margin-bottom: 10px;
+      flex: 1;
+      margin-right: 10px;
+      position: relative;
+      @media (max-width: 320px) {
+        flex-wrap: wrap;
+      }
+      .container-detail-service {
+        display: none;
+      }
+      .text-service {
+        font-family: Mulish;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 20px;
+        color: $text-color-black;
+        @media (max-width: 320px) {
+          font-size: 13px;
+          width: 100%;
+          text-align: left;
+        }
+      }
+      .content-price {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        @media (max-width: 320px) {
+          width: 100%;
+        }
+        .text-price {
+          font-family: Mulish;
+          font-style: normal;
+          font-weight: bold;
+          font-size: 14px;
+          line-height: 18px;
+          text-align: right;
+          color: $text-color-black-fade;
+          @media (max-width: 320px) {
+            font-size: 11px;
+          }
+        }
+        .content-info {
+          padding: 5px;
+        }
+
+        .container-detail-service {
+          display: none;
+        }
+        .content-info:hover + .container-detail-service {
+          display: block;
+          position: absolute;
+          background: #ffffff;
+          border: 1px solid rgba(0, 0, 0, 0.1);
+          box-sizing: border-box;
+          box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2);
+          border-radius: 16px;
+          padding: 10px;
+          bottom: 0;
+          right: 100px;
+          height: 100px;
+          width: 100px;
+          z-index: 1000px;
+        }
+      }
+    }
+  }
+}
+.list-voucher {
+  z-index: 3;
+  background: #ffffff;
+  transition: opacity 0.5s;
+  //   @media (max-width: 900px) {
+  //     right: 25px;
+  //   }
+  //   @media (max-width: 768px) {
+  //     right: 25px;
+  //   }
+  //   @media (max-width: 480px) {
+  //     left: 0px;
+  //     right: 0px;
+  //   }
+  .container-button-voucher {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    .button-select {
+      border: none;
+      background: $primary-color;
+      border-radius: 16px;
+      color: #fff;
+      font-family: Mulish;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 16px;
+      line-height: 20px;
+      text-align: center;
+      text-transform: uppercase;
+      color: #ffffff;
+      padding: 10px 50px 10px 50px;
+      text-align: center;
+      @media (max-width: 414px) {
+        font-size: 13px;
+        padding: 5px 50px 5px 50px;
+      }
+    }
+  }
+
+  .enter-voucher {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    .search-field {
+      flex: 1;
+      display: flex;
+      // margin: 10px;
+      box-sizing: border-box;
+      padding: 5px;
+      background: #f8f8f8;
+      border: 1px solid rgba(0, 0, 0, 0.5);
+      box-sizing: border-box;
+      border-radius: 16px;
+      input {
+        outline: none;
+        border: none;
+        flex: 1;
+        font-family: Mulish;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 18px;
+        color: #000000;
+        padding: 5px 0 5px 0;
+        background: #f8f8f8;
+        @media (max-width: 414px) {
+          font-size: 12px;
+          padding: 0;
+        }
+      }
+      img {
+        align-self: flex-start;
+        width: 20px;
+        margin-left: 5px;
+      }
+    }
+    .button-save-voucher {
+      align-self: center;
+      font-size: 14px;
+      font-weight: bold;
+      margin-right: 10px;
+      background: #ffffff;
+      border-radius: 16px;
+      border: 1px solid rgba(0, 0, 0, 0.5);
+      padding: 5px 10px 5px 10px;
+      margin-left: 5px;
+      @media (max-width: 414px) {
+        font-size: 12px;
+        padding: 3px 10px 3px 10px;
+      }
+      @media (max-width: 320px) {
+        margin-top: 10px;
+      }
+    }
+  }
+  .header-text {
+    font-family: Mulish;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: left;
+    color: $text-color-black;
+    padding-top: 20px;
+    @media (max-width: 414px) {
+      font-size: 13px;
+    }
+  }
+  ul {
+    padding: 0 !important;
+    margin: 0 !important;
+    .item-voucher {
+      position: relative;
+      padding: 10px;
+      display: flex;
+      @media (max-width: 414px) {
+        padding: 5px;
+      }
+      cursor: pointer;
+      .body-voucher2 {
+        background-color: $secondary-color;
+        // height: 100px;
+        display: flex;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        align-items: center;
+        flex: 1;
+        .icon-logo {
+          width: 50px;
+          height: 50px;
+          object-fit: contain;
+          margin: 0 20px 0 20px;
+          @media (max-width: 414px) {
+            margin: 0 10px 0 10px;
+          }
+          @media (max-width: 320px) {
+            width: 30px;
+            height: 30px;
+          }
+        }
+        .text-isc {
+          text-align: center;
+          padding-top: 10px;
+          @media (max-width: 414px) {
+            font-size: 12px;
+          }
+          @media (max-width: 320px) {
+            font-size: 10px;
+          }
+        }
+        .voucher-detail {
+          border-left: dashed 2px $tabs-base-color;
+          padding: 10px 20px 10px 20px;
+          @media (max-width: 414px) {
+            padding: 5px 10px 5px 10px;
+          }
+
+          .voucher-title {
+            font-style: normal;
+            font-weight: bold;
+            font-size: 16px;
+            // line-height: 16px;
+            // color: #ffffff;
+            // margin-bottom: 10px !important;
+            @media (max-width: 414px) {
+              font-size: 13px;
+            }
+            @media (max-width: 320px) {
+              font-size: 11px;
+            }
+          }
+          .voucher-date {
+            font-style: normal;
+            font-weight: normal;
+            font-size: 13px;
+            // line-height: 13px;
+            // color: #ffffff;
+            // margin-bottom: 10px !important;
+            @media (max-width: 414px) {
+              font-size: 11px;
+            }
+            @media (max-width: 320px) {
+              font-size: 10px;
+            }
+          }
+          .voucher-remain {
+            font-style: normal;
+            font-weight: normal;
+            font-size: 13px;
+            line-height: 13px;
+            // color: #ffffff;
+            // margin-bottom: 10px !important;
+            @media (max-width: 414px) {
+              font-size: 11px;
+            }
+            @media (max-width: 320px) {
+              font-size: 10px;
+            }
+          }
+        }
+      }
+      .body-voucher2.type2,
+      .body-voucher.type0 {
+        background-color: #fff;
+        border-radius: 2px;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+      }
+      .body-voucherErr {
+        background-color: #3161ad60;
+        height: 100px;
+        display: flex;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        flex: 1;
+        .voucher-detail {
+          margin-left: 20px;
+          border-left: dashed 2px #fff;
+          padding: 10px;
+          .voucher-title {
+            font-style: normal;
+            font-weight: bold;
+            font-size: 16px;
+            line-height: 16px;
+            color: #ffffff;
+            margin-bottom: 10px !important;
+          }
+          .voucher-date {
+            font-style: normal;
+            font-weight: normal;
+            font-size: 13px;
+            line-height: 13px;
+            color: #ffffff;
+            margin-bottom: 10px !important;
+          }
+          .voucher-remain {
+            font-style: normal;
+            font-weight: normal;
+            font-size: 13px;
+            line-height: 13px;
+            color: #ffffff;
+            margin-bottom: 10px !important;
+          }
+        }
+      }
+      .body-voucherErr.type2,
+      .body-voucher.type0 {
+        cursor: not-allowed;
+        background-color: #f0730060;
+      }
+      .button-check {
+        align-self: center;
+        margin-left: 5px;
+        width: 20px;
+        @media (max-width: 320px) {
+          width: 15px;
+        }
+      }
+    }
+    .selected {
+      background: rgba(0, 210, 177, 0.1);
+      img {
+        margin-left: 10px;
+        width: 15px;
+        align-self: flex-start;
+      }
+    }
+  }
+}

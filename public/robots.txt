@@ -1,0 +1,12 @@
+User-agent: *
+Disallow: /dang-nhap
+Disallow: /dang-ky
+Disallow: /quen-mat-khau
+Disallow: /dat-kham/thong-tin-dat-kham
+Disallow: /s/Digital?campaign
+Disallow: /dat-kham-moi/co-so-y-te?hospital
+
+Disallow: /cam-nang-y-te?content
+Disallow: /dich-vu?keyword
+
+Sitemap: https://www.isofhcare.com/sitemap.xml

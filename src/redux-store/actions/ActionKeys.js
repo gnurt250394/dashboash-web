@@ -1,0 +1,11 @@
+const ActionKeys = {
+  AUTH: {
+    LOGIN: "LOGIN",
+    LOGOUT: "LOGOUT",
+    CHECKEXISTPROFILE: "CHECKEXISTPROFILE",
+    SET_FIRST_LOGIN: "SET_FIRST_LOGIN",
+    LOGOUT_TEMPORARY: "LOGOUT_TEMPORARY",
+  },
+};
+
+export default ActionKeys;
